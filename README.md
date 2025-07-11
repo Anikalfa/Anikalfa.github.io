@@ -1,7 +1,7 @@
 # Anikalfa.github.io
 # My Portfolio
 
-Welcome to my personal portfolio! This repository contains my online portfolio showcasing my skills, projects, education, and experience. This portfolio website is built using **HTML**, **CSS**, and **JavaScript**, with an emphasis on responsive design and modern web practices.
+Hi I'am Md.Anik Chowdhury . Welcome to my personal portfolio! This repository contains my online portfolio showcasing my skills, projects, education, and experience. This portfolio website is built using **HTML**, **CSS**, and **JavaScript**, with an emphasis on responsive design and modern web practices.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -24,9 +24,7 @@ Welcome to my personal portfolio! This repository contains my online portfolio s
 - **JavaScript**: For interactivity and smooth scrolling.
 - **Font Awesome**: For icons in the skills section.
 
-## Installation
-To run the portfolio locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+
+
+  
