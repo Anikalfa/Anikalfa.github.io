@@ -453,7 +453,106 @@ h2 {
         padding: 8px 16px;
     }
 }
+/* --- 1. Section and Title Styling --- */
+#expertise {
+    /* Optional: Add padding for vertical spacing */
+    padding: 60px 0; 
+    /* Optional: Set a light background color for separation */
+    background-color: #f9f9f9; 
+}
 
+.container {
+    /* Ensures content is centered and doesn't stretch too wide */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em; /* Large, bold heading */
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* --- 2. Grid Layout for Cards --- */
+.skills-grid {
+    display: grid;
+    /* Creates 3 columns of equal size */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Space between the columns/cards */
+    gap: 30px; 
+}
+
+/* --- 3. Individual Skill Card Styling --- */
+.skill-category {
+    background-color: #ffffff; /* White card background */
+    padding: 30px;
+    border-radius: 12px; /* Softly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%; /* Ensures all cards stretch to the same height */
+}
+
+/* Hover Effect for Interactivity */
+.skill-category:hover {
+    transform: translateY(-5px); /* Lifts the card slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+}
+
+.category-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0077B5; /* Use a professional brand color (e.g., LinkedIn Blue) */
+    display: flex; /* Aligns icon and text */
+    align-items: center;
+}
+
+/* Icon Styling (requires Font Awesome link in your HTML <head>) */
+.category-title i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* List Styling */
+.skill-category ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.skill-category ul li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    /* Optional: Add a subtle marker line */
+    border-left: 3px solid #ccc; 
+    padding-left: 15px;
+    font-size: 1em;
+}
+
+/* Style the bold text within the list item */
+.skill-category ul li strong {
+    color: #333;
+    font-weight: 700;
+}
+
+
+/* --- 4. Responsiveness (Crucial for mobile devices) --- */
+@media (max-width: 992px) {
+    /* On medium screens, switch to 2 columns */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    /* On small screens/phones, switch to 1 column */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* Footer */
 footer {
     background-color: #9e2929;
